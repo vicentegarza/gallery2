@@ -1,0 +1,61 @@
+<!--
+
+Course: Interactivity with JavaScript - Week 4 Final Assignment
+Vicente J. Garza
+Date: May, 2026                         
+                     
+Description:       
+This is a modified and enhanced version of the previous interactive photo
+gallery done in Module 2.  This now includes 6 thumbnails instead of 3 and
+the following enhancements: accessibility for usage of tab in addition to
+the mouse, opacity of thumbnails.
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
+</head>
+
+<body onload="addTabIndex()">
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class = "preview" alt = "Eclipse with orange tones" 
+    src = "images/space1.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()"
+    onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class = "preview" alt = "Astronaut on the moon" 
+    src = "images/space2.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()"  
+    onfocus="upDate(this)" onblur="unDo()">
+	
+	<img class = "preview" alt = "Planet with blue light" 
+    src = "images/space3.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()" 
+    onfocus="upDate(this)" onblur="unDo()">
+
+	<img class = "preview" alt = "Galaxy with red and blue tones" 
+    src = "images/space4.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()" 
+    onfocus="upDate(this)" onblur="unDo()">
+
+	<img class = "preview" alt = "Planet with orange light" 
+    src = "images/space5.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()" 
+    onfocus="upDate(this)" onblur="unDo()">
+  	
+	<img class = "preview" alt = "Space Capsule" 
+    src = "images/space6.jpg" 
+    onmouseover = "upDate(this)" onmouseout = "unDo()" 
+    onfocus="upDate(this)" onblur="unDo()">
+
+</body>
+</html>
